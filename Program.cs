@@ -21,11 +21,6 @@ builder.Services.AddMassTransit(MassTransitCfg =>
     {
         cfg.ConfigureEndpoints(context);
     });
-
-    MassTransitCfg.UsingInMemory((context, cfg) =>
-    {
-        cfg.ConfigureEndpoints(context);
-    });
 });
 
 // builder.Services.AddHostedService<Worker>();
